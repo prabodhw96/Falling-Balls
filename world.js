@@ -1,3 +1,5 @@
+'use strict';
+
 // load matter.js modules
 var Engine = Matter.Engine,
 Render = Matter.Render,
@@ -29,9 +31,9 @@ const MAX_BALLS = 10;
 var left = false, right = false;
 
 var N_SENSORS = 20;
-var N_ACTIONS = 3;
+const N_ACTIONS = 3;
 // depth resolution
-var SENSOR_RESOLUTION = 3;
+const SENSOR_RESOLUTION = 3;
 // max depth
 var SENSOR_RANGE = 300;
 
@@ -121,7 +123,7 @@ function kill() {
 					mask: noCategory
 				},
 				render: {
-					fillStyle: "#f00"
+					fillStyle: "#fff"
 				}
 			});
 
